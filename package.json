@@ -1,0 +1,21 @@
+{
+  "name": "agent-runtime",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "check": "oxlint && oxfmt --check && tsc --noEmit",
+    "check:fix": "oxlint --fix && oxfmt --write",
+    "start": "node src/main.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}
